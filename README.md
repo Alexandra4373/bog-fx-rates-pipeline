@@ -1,0 +1,1 @@
+This pipeline collects daily Bank of Ghana interbank exchange rates (buying, selling and mid rates of the cedi against 19 currencies). The data comes from the StatsGH Data API (https://www.statsgh.com/api/data/bog-fx-rates), licensed CC BY 4.0, with the Bank of Ghana as the original source.
