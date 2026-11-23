@@ -18,3 +18,8 @@ deployments:
       name: Prefect Cloud
     work_pool:
       name: my-managed-pool
+
+  - name: fx-sketch
+    entrypoint: bog_fx_rates_pipeline/plan_sketch.py:plan_sketch
+    work_pool:
+      name: my-managed-pool
