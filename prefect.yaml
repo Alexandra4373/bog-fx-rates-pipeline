@@ -19,6 +19,10 @@ deployments:
     work_pool:
       name: my-managed-pool
 
+    schedules:
+      - cron: "0 9 * * 1-5"
+        timezone: Africa/Accra
+
   - name: fx-sketch
     entrypoint: bog_fx_rates_pipeline/plan_sketch.py:plan_sketch
     work_pool:
