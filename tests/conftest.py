@@ -34,3 +34,10 @@ def make_payload(days: int = 10, **changes) -> dict:
             )
     rows[0].update(changes)
     return {"rows": rows}
+
+
+@pytest.fixture(autouse=True, scope="session")
+def prefect_test_mode():
+    """Run all flows in tests against a temporary Prefect server, never a real one."""
+    with prefect_test_harness():
+        yield
